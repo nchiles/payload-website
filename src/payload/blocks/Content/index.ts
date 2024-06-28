@@ -12,7 +12,7 @@ const columnFields: Field[] = [
     options: [
       {
         value: 'oneThird',
-        label: 'One Thirdddd',
+        label: 'One Third',
       },
       {
         value: 'half',
@@ -32,16 +32,7 @@ const columnFields: Field[] = [
   {
     name: 'enableLink',
     type: 'checkbox',
-  },
-  {
-    name: 'media',
-    type: 'upload',
-    relationTo: 'media',
-    required: true,
-    admin: {
-      condition: (_, { type } = {}) => ['highImpact', 'mediumImpact'].includes(type),
-    },
-  },
+  },  
   link({
     overrides: {
       admin: {
@@ -49,6 +40,11 @@ const columnFields: Field[] = [
       },
     },
   }),
+  {
+    name: 'media',
+    type: 'upload',
+    relationTo: 'media'
+  },
 ]
 
 export const Content: Block = {
