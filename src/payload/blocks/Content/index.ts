@@ -40,6 +40,11 @@ const columnFields: Field[] = [
       },
     },
   }),
+  {
+    name: 'media',
+    type: 'upload',
+    relationTo: 'media',
+  },
 ]
 
 export const Content: Block = {
