@@ -28,7 +28,7 @@ export const HeaderNav: React.FC<{ header: HeaderType }> = ({ header }) => {
         return <CMSLink key={i} {...link} appearance="none" />
       })}
       {user && <Link href="/account">Account</Link>}
-      {/*
+      {
         // Uncomment this code if you want to add a login link to the header
         {!user && (
           <React.Fragment>
@@ -36,7 +36,7 @@ export const HeaderNav: React.FC<{ header: HeaderType }> = ({ header }) => {
             <Link href="/create-account">Create Account</Link>
           </React.Fragment>
         )}
-      */}
+      }
     </nav>
   )
 }
