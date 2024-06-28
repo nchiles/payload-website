@@ -39,12 +39,7 @@ const columnFields: Field[] = [
         condition: (_, { enableLink }) => Boolean(enableLink),
       },
     },
-  }),
-  {
-    name: 'media',
-    type: 'upload',
-    relationTo: 'media'
-  },
+  })
 ]
 
 export const Content: Block = {
