@@ -13,7 +13,7 @@ export const hero: Field = {
     {
       type: 'select',
       name: 'type',
-      label: 'Type',
+      label: 'Typeeeee',
       required: true,
       defaultValue: 'lowImpact',
       options: [
