@@ -33,6 +33,15 @@ const columnFields: Field[] = [
     name: 'enableLink',
     type: 'checkbox',
   },
+  {
+    name: 'media',
+    type: 'upload',
+    relationTo: 'media',
+    required: true,
+    admin: {
+      condition: (_, { type } = {}) => ['highImpact', 'mediumImpact'].includes(type),
+    },
+  },
   link({
     overrides: {
       admin: {
