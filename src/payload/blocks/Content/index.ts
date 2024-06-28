@@ -12,7 +12,7 @@ const columnFields: Field[] = [
     options: [
       {
         value: 'oneThird',
-        label: 'One Third',
+        label: 'One Thirdddd',
       },
       {
         value: 'half',
