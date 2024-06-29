@@ -22,11 +22,14 @@ export const ContentBlock: React.FC<
         {columns &&
           columns.length > 0 &&
           columns.map((col, index) => {
-            const { enableLink, richText, link, size } = col
+            const { enableLink, richText, link, size, media } = col
 
             return (
               <div key={index} className={[classes.column, classes[`column--${size}`]].join(' ')}>
                 <RichText content={richText} />
+                {media && media.url && (
+                  <img src={media.url} alt={media.alt || 'Media'} className={classes.media} />
+                )}
                 {enableLink && <CMSLink className={classes.link} {...link} />}
               </div>
             )

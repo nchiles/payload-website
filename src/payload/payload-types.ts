@@ -98,6 +98,7 @@ export interface Page {
                 label: string
                 appearance?: ('default' | 'primary' | 'secondary') | null
               }
+              media?: Media
               id?: string | null
             }[]
           | null
