@@ -27,6 +27,7 @@ export const ContentBlock: React.FC<
             return (
               <div key={index} className={[classes.column, classes[`column--${size}`]].join(' ')}>
                 <RichText content={richText} />
+                <p>this is the right place for the media</p>
                 {media && media.url && (
                   <img src={media.url} alt={media.alt || 'Media'} className={classes.media} />
                 )}
