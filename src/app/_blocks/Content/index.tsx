@@ -24,6 +24,9 @@ export const ContentBlock: React.FC<
           columns.map((col, index) => {
             const { enableLink, richText, link, size, media } = col
 
+            console.log('Column:', col); // Log the entire column object
+            console.log('Media:', media); // Log the media object
+
             return (
               <div key={index} className={[classes.column, classes[`column--${size}`]].join(' ')}>
                 <RichText content={richText} />
